@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-06-10 22:14:15.465728",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "days_in_the_month",
+  "grace_period",
+  "property_naming_prefix",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "days_in_the_month",
+   "fieldtype": "Int",
+   "label": "Days In the Month"
+  },
+  {
+   "fieldname": "grace_period",
+   "fieldtype": "Int",
+   "label": "Grace Period"
+  },
+  {
+   "fieldname": "property_naming_prefix",
+   "fieldtype": "Data",
+   "label": "Property Naming Prefix"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Rental Settings",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-06-11 22:36:41.137070",
+ "modified_by": "Administrator",
+ "module": "Rental Management",
+ "name": "Rental Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Property Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
